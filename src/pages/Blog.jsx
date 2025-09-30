@@ -1,11 +1,11 @@
 import React from 'react'
 
-function NotFound() {
+function Blog() {
   return (
     <>
-      test
+      blog
     </>
   )
 }
 
-export default NotFound
+export default Blog

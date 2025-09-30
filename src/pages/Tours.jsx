@@ -1,11 +1,11 @@
 import React from 'react'
 
-function NotFound() {
+function Tours() {
   return (
     <>
-      test
+      tours
     </>
   )
 }
 
-export default NotFound
+export default Tours

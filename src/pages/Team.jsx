@@ -1,11 +1,12 @@
 import React from 'react'
 
-function NotFound() {
+function Team() {
   return (
     <>
-      test
+      team
     </>
   )
 }
 
-export default NotFound
+export default Team
+

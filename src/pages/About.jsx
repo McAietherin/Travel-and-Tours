@@ -1,11 +1,11 @@
 import React from 'react'
 
-function NotFound() {
+function About() {
   return (
     <>
-      test
+      about
     </>
   )
 }
 
-export default NotFound
+export default About
