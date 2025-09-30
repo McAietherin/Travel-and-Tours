@@ -121,6 +121,9 @@ footer {
         all: unset;
         background-color: #32312E;
         height: 80px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        padding: 6px 11px;
     }
 }
 
@@ -129,6 +132,7 @@ footer {
     background-color: #32312E;
     height: 38px;
     width: 100%;
+    padding: 0 11px;
 }
 
 form {
@@ -178,7 +182,7 @@ iframe {
 #overlayer {
     background-color: #21201C;
     position: absolute;
-    bottom: -12%;
+    bottom: -2vw;
     right: 13%;
     padding: 40px 140px 40px 40px;
     @include flex(start, space-between, column, 5px);
@@ -204,5 +208,73 @@ iframe {
 
     img {
         width: 80%;
+    }
+}
+
+#dropper {
+    display: none;
+    font-size: 45px;
+}
+
+#mobile {
+    @include position(fixed, 0);
+    z-index: 5;
+    width: 100%;
+    transition: top 0.3s ease;
+    padding: 20px 0;
+    background-color: #000000;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+
+        li {
+            margin: 10px 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+@media (max-width: 700px) {
+    #dropper {
+        display: block;
+    }
+
+    #navver {
+        display: none;
+    }
+
+    #overlayer {
+        position: static;
+        border-bottom: 2px solid #ffffff5f;
+    }
+}
+
+@media (max-width: 1250px) {
+    #contact {
+        flex-direction: column;
+        gap: 20px;
+
+        div,
+        form {
+            width: 100%;
+        }
+    }
+
+    #overlayer {
+        bottom: -9vw;
+    }
+}
+
+@media(max-width: 420px) {
+    form{
+        grid-template-columns: 1fr;
     }
 }

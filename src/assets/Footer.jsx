@@ -3,17 +3,17 @@ import React from 'react'
 function Footer() {
   class IframeErrorBoundary extends React.Component {
     constructor(props) {
-      super(props);
-      this.state = { hasError: false };
+      super(props)
+      this.state = { hasError: false }
     }
     static getDerivedStateFromError() {
-      return { hasError: true };
+      return { hasError: true }
     }
     render() {
       if (this.state.hasError) {
-        return <p>Map failed to load. Please try again later.</p>;
+        return <p>Map failed to load. Please try again later.</p>
       }
-      return this.props.children;
+      return this.props.children
     }
   }
 
