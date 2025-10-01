@@ -23,7 +23,7 @@ function Footer() {
         <img src="/triangles.png" alt="banner" />
       </div>
       <div id="restfooter">
-        <div id="contact">
+        <div id="contact" className='jumper'>
           <div>
             <h3>Contact us for your journey</h3>
             <p>Reach out to Tournow for any travel queries or tour arrangements in Kathmandu.</p>
@@ -55,7 +55,7 @@ function Footer() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </IframeErrorBoundary>
-        <div id="overlayer">
+        <div id="overlayer" className='jumper'>
           <h3>Location</h3>
           <p>Kathmandu, Bagmati Province, Nepal</p>
         </div>

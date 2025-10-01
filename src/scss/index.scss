@@ -12,12 +12,18 @@
 
 body {
     overflow-x: hidden;
+    width: 100vw;
     font-family: "Jost", sans-serif;
     background-color: #F5F5F4;
     height: 120vh;
 
     p {
         font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
     }
 }
 
@@ -28,10 +34,122 @@ h4,
 h5,
 h6 {
     font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 69px;
+    line-height: 74px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
 }
 
 .spacer {
     padding: 50px;
+}
+
+.jumper {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: 0.2s ease-out;
+}
+
+.jumper.animate {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.button {
+    background-color: #f4b619;
+    color: #000000;
+    padding: 13px 30px;
+    width: fit-content;
+}
+
+.darker {
+    background-color: #21201C;
+    color: #ffffff;
+
+    .threehold {
+        padding: 9vw 0;
+    }
+}
+
+.threehold {
+    @include spacer();
+    @include flex(start, space-between, column, 30px);
+}
+
+.three {
+    @include flex(center, space-between, $gap: 30px);
+    width: 100%;
+}
+
+.threecont {
+    width: 33%;
+    height: 39vw;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        height: 100%;
+        filter: brightness(110%);
+    }
+
+    div {
+        position: absolute;
+        bottom: 0;
+        background-color: #000000ae;
+        color: #ffffff;
+        height: 36%;
+        width: 100%;
+        padding: 30px 25px;
+        @include flex(start, start, column, 10px);
+
+        p {
+            align-self: baseline;
+        }
+    }
+}
+
+.doubler {
+    @include flex(start, space-between, $gap: 80px);
+    @include spacer();
+    height: fit-content;
+    padding: 60px 0 80px 0;
+
+    div {
+        width: 50%;
+    }
+}
+
+.dovtext {
+    @include flex(start, space-between, column, 30px);
+    height: fit-content;
+}
+
+.dovimg {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        transform: scale(1.1);
+    }
 }
 
 nav {
@@ -40,6 +158,7 @@ nav {
     width: 100vw;
     transition: background-color 0.2s ease-in, color 0.2s ease-in;
     z-index: 25;
+    color: white;
     @include flex(center, center);
     @include position(fixed, 0);
 
@@ -63,26 +182,20 @@ nav {
     }
 }
 
+#logo img {
+    left: -14px;
+}
+
 #defnav {
+    z-index: 1;
     background-color: #21201C;
     color: #ffffff;
     box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.478);
-
-    #logo img {
-        left: -14px;
-    }
 }
 
 #homenav {
+    z-index: 1;
     background-color: transparent;
-
-    #logo {
-        width: 105px;
-
-        img {
-            left: -19px;
-        }
-    }
 }
 
 #logo {
@@ -100,6 +213,8 @@ footer {
 }
 
 #restfooter {
+    z-index: -1;
+    position: relative;
     background-color: #21201C;
 }
 
@@ -112,6 +227,14 @@ footer {
     img {
         width: 100%;
     }
+}
+
+#bottr {
+    width: 100%;
+    border: solid;
+    border-color: transparent;
+    border-top-color: #21201C;
+    border-width: 6.27vw 50vw;
 }
 
 .textinp {
@@ -151,9 +274,8 @@ form {
 }
 
 #contact {
-    @include flex(baseline, space-between);
+    @include flex(baseline, space-between, $gap: 80px);
     @include spacer();
-    gap: 80px;
     padding: 86px 0;
 
     >div {
@@ -162,7 +284,6 @@ form {
     }
 
     h3 {
-        font-size: 32px;
         font-weight: 500;
     }
 }
@@ -182,7 +303,7 @@ iframe {
 #overlayer {
     background-color: #21201C;
     position: absolute;
-    bottom: -2vw;
+    bottom: 28%;
     right: 13%;
     padding: 40px 140px 40px 40px;
     @include flex(start, space-between, column, 5px);
@@ -242,6 +363,101 @@ iframe {
 
 }
 
+#banner {
+    width: 100vw;
+    overflow: hidden;
+    height: 55vw;
+    @include position(relative, -100px);
+
+    img {
+        width: 100vw;
+        filter: brightness(75%);
+        transform: scale(1.1);
+    }
+}
+
+#bannerover {
+    @include position(absolute, 20vw, 11vw);
+    @include flex(start, space-between, column, 20px);
+    color: white;
+    z-index: 5;
+    width: 45vw;
+}
+
+.slide-wrapper {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.slide-inner {
+    overflow: hidden;
+
+    img {
+        transition: transform 0.3s, filter 0.3s;
+        filter: brightness(70%) blur(5px);
+        transform: scale(1.03);
+    }
+}
+
+.slick-center .slide-inner img {
+    filter: brightness(1) blur(0);
+}
+
+#prices {
+    @include spacer();
+    @include flex(center, space-between, column, 20px);
+    padding: 110px 0;
+}
+
+#offers {
+    @include flex(center, space-between);
+    width: 100%;
+    height: 48vw;
+}
+
+.offer {
+    border: 1px solid #808080;
+    padding: 20px;
+    width: 33%;
+    height: 90%;
+    @include flex(start, start, column, 15px);
+}
+
+#bigger {
+    border: 2px solid #808080;
+    width: 34%;
+    padding: 30px 20px;
+    height: 100%;
+}
+
+.ofimg {
+    height: 40%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.info{
+    width: 100%;
+    background-color: #21201C;
+    color: #ffffff;
+    text-align: center;
+    padding: 7px 0;
+}
+
+.price p{
+    @include position(relative, -5px);
+}
+
+#pop{
+    background-color: #21201C;
+    color: white;
+    border-radius: 18px;
+    padding: 3px 15px;
+}
+
 @media (max-width: 700px) {
     #dropper {
         display: block;
@@ -269,12 +485,16 @@ iframe {
     }
 
     #overlayer {
-        bottom: -9vw;
+        bottom: 26%;
     }
 }
 
-@media(max-width: 420px) {
-    form{
+@media(max-width: 500px) {
+    form {
         grid-template-columns: 1fr;
+    }
+
+    #foot {
+        @include flex(start, space-between, column, 15px);
     }
 }

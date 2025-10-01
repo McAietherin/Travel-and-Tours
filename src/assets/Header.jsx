@@ -40,7 +40,7 @@ function Header() {
       <nav id={navId}>
         <div>
           <div id="logo">
-            <img src={navId === 'defnav' ? '/logo3.png' : '/logo1.png'} alt="logo" />
+            <img src={'/logo3.png'} alt="logo" />
           </div>
           <ul id='navver'>
             <li><Link to={'/'}>Home</Link></li>
