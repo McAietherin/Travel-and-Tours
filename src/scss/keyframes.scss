@@ -1,0 +1,9 @@
+@keyframes scrollRight {
+    0% {
+        transform: translateX(calc(-300px * 5));
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

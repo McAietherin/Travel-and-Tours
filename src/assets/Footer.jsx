@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   class IframeErrorBoundary extends React.Component {
@@ -60,9 +61,11 @@ function Footer() {
           <p>Kathmandu, Bagmati Province, Nepal</p>
         </div>
         <div id="foot">
-          <div id="logo2">
-            <img src={'/logo2.png'} alt="logo" />
-          </div>
+          <Link to={'/'}>
+            <div id="logo2">
+              <img src={'/logo2.png'} alt="logo" />
+            </div>
+          </Link>
           <p>&copy; 2025 TourNow. All rights reserved</p>
         </div>
       </div>

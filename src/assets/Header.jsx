@@ -39,9 +39,11 @@ function Header() {
     <>
       <nav id={navId}>
         <div>
-          <div id="logo">
-            <img src={'/logo3.png'} alt="logo" />
-          </div>
+          <Link to={'/'}>
+            <div id="logo">
+              <img src={'/logo3.png'} alt="logo" />
+            </div>
+          </Link>
           <ul id='navver'>
             <li><Link to={'/'}>Home</Link></li>
             <li><Link to={'/about-us'}>About us</Link></li>
