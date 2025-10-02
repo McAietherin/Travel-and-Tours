@@ -629,6 +629,40 @@ iframe {
     }
 }
 
+#tesam {
+    @include spacer();
+    @include flex(start, space-between, column, 40px);
+    padding: 100px 0;
+}
+
+#tsmgrid {
+    display: grid;
+    gap: 45px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    >div {
+        width: 100%;
+        height: fit-content;
+        @include flex(start, start, column, 20px);
+    }
+}
+
+.tsmimg {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 30px;
+
+    img {
+        width: 100%;
+    }
+}
+
+#spa{
+    margin-top: 100px;
+}
+
 @media (max-width: 700px) {
     #aban h1 {
         font-size: 60px;
@@ -735,6 +769,10 @@ iframe {
 }
 
 @media(max-width: 900px) {
+    #tsmgrid {
+        grid-template-columns: 1fr;
+    }
+
     #aban {
         height: 66vw;
     }
@@ -822,10 +860,12 @@ iframe {
 @media(max-width: 400px) {
     #aban {
         height: 95vw;
-        img{
+
+        img {
             height: 100%;
             width: auto;
         }
+
         h1 {
             font-size: 55px;
         }
