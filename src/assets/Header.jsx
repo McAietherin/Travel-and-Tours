@@ -47,9 +47,8 @@ function Header() {
           <ul id='navver'>
             <li><Link to={'/'}>Home</Link></li>
             <li><Link to={'/about-us'}>About us</Link></li>
-            <li><Link to={'/team'}>Team</Link></li>
-            <li><Link to={'/tours'}>Tours</Link></li>
-            <li><Link to={'/blog'}>Blog</Link></li>
+            <li><Link to={'/team'}>Our team</Link></li>
+            <li><Link to={'/blog'}>Blogs</Link></li>
           </ul>
 
           <div id="dropper" ref={dropperRef} onClick={() => setIsOpen(!isOpen)}>

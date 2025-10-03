@@ -10,6 +10,19 @@
     box-sizing: border-box !important;
 }
 
+#root {
+    width: 100vw;
+    overflow: hidden;
+}
+
+#blog {
+    @include spacer();
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 50px auto;
+}
+
 body {
     overflow-x: hidden;
     width: 100vw;
@@ -200,7 +213,6 @@ p {
 }
 
 nav {
-    background-color: red;
     height: 85px;
     width: 100vw;
     transition: background-color 0.2s ease-in, color 0.2s ease-in;
@@ -454,6 +466,11 @@ iframe {
     @include spacer();
     @include flex(center, space-between, column, 20px);
     padding: 110px 0;
+
+    h2 {
+        text-align: center;
+    }
+
 }
 
 #offers {
@@ -587,6 +604,26 @@ iframe {
     }
 }
 
+#sear {
+    @include spacer();
+    @include flex(center, space-between);
+    margin: 50px auto;
+
+    input {
+        all: unset;
+        padding: 8px 20px;
+        width: 20vw;
+        background-color: #e5e5e5;
+    }
+
+    input::placeholder {
+        color: #000000;
+        font-size: 22px;
+        @include position(absolute, 50%);
+        transform: translateY(-50%);
+    }
+}
+
 #aban {
     overflow: hidden;
     width: 100vw;
@@ -659,11 +696,48 @@ iframe {
     }
 }
 
-#spa{
+#spa {
     margin-top: 100px;
 }
 
+#blogger {
+    text-align: center;
+    @include spacer();
+    @include flex(center, space-between, column, 20px);
+
+    img {
+        width: 400px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    h3 {
+        color: #555555;
+    }
+}
+
+#bio {
+    color: #333333;
+    width: 50%;
+}
+
+.blogimg {
+    width: 100%;
+    aspect-ratio: 5/3;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
 @media (max-width: 700px) {
+    #blogger img {
+        width: 240px !important;
+    }
+
     #aban h1 {
         font-size: 60px;
     }
@@ -695,6 +769,18 @@ iframe {
 }
 
 @media (max-width: 1250px) {
+    #blog {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #bio {
+        width: 70%;
+    }
+
+    #blogger img {
+        width: 30vw;
+    }
+
     .slide {
         width: 27vw;
     }
@@ -769,6 +855,14 @@ iframe {
 }
 
 @media(max-width: 900px) {
+    #blog {
+        grid-template-columns: 1fr;
+    }
+
+    #bio {
+        width: 100%;
+    }
+
     #tsmgrid {
         grid-template-columns: 1fr;
     }
@@ -851,10 +945,6 @@ iframe {
             height: 32vw;
         }
     }
-}
-
-#prices h2 {
-    text-align: center;
 }
 
 @media(max-width: 400px) {
