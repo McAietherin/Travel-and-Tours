@@ -305,7 +305,8 @@ footer {
 
 #restfooter {
     z-index: -1;
-    position: relative;
+    position: absolute;
+    width: 100vw;
     background-color: #21201C;
 }
 
@@ -433,7 +434,7 @@ iframe {
     z-index: 5;
     width: 100%;
     transition: top 0.3s ease-in-out;
-    padding: 20px 0;
+    padding: 60px 0;
     background-color: #000000;
 
     ul {
@@ -649,7 +650,7 @@ iframe {
     input {
         all: unset;
         padding: 8px 20px;
-        width: 20vw;
+        width: 39%;
         background-color: #e5e5e5;
     }
 
@@ -952,7 +953,12 @@ iframe {
         }
     }
 
-
+    #sear{
+        @include flex($ai:start, $fd:column, $gap:13px);
+        input{
+            width: 100%;
+        }
+    }
 
     #banner {
         height: 66vw;

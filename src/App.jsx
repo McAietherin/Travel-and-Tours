@@ -14,7 +14,7 @@ function App() {
       })
     }, {
       threshold: 0.2,
-      rootMargin: "0px 0px -40% 0px"
+      rootMargin: "0px 0px -45% 0px"
     })
 
     const jumpers = document.querySelectorAll('.jumper')

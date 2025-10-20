@@ -19,7 +19,7 @@ function Blog() {
     <>
       <div id="sear">
         <h2 className='jumper'>Blog</h2>
-        <input type="text" placeholder='Search' value={searchTerm}
+        <input type="text" name='pedro'  id="pedros" placeholder='Search' value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)} />
       </div>
       <div id="blog">
@@ -39,7 +39,7 @@ function Blog() {
             </div>
           ))
         ) : (
-          <p>No blogs found.</p>
+          <p>No blogs found. :(</p>
         )}
       </div>
     </>

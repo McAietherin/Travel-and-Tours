@@ -77,7 +77,6 @@ function Header() {
           <Link to={'/'}><li>Home</li></Link>
           <Link to={'/about-us'}><li>About us</li></Link>
           <Link to={'/team'}><li>Team</li></Link>
-          <Link to={'/tours'}><li>Tours</li></Link>
           <Link to={'/blog'}><li>Blog</li></Link>
         </ul>
       </div>

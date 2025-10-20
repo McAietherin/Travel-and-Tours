@@ -32,17 +32,17 @@ function Footer() {
           <form>
             <div className="texinp">
               <p>Name</p>
-              <input type="text" required className='inp' />
+              <input type="text" required className='inp' name='inp1' placeholder='' />
             </div>
             <div className="texinp">
               <p>Email</p>
-              <input type="email" required className='inp' />
+              <input type="email" required className='inp' name='inp2' placeholder='' />
             </div>
             <div id='exception' className="textinp">
               <p>Message</p>
-              <textarea required></textarea>
+              <textarea title='' placeholder=''  required></textarea>
             </div>
-            <input type="submit" id='submit' value='Send inquiry' />
+            <input type="submit" id='submit' value='Send inquiry' name='inp1' placeholder='' />
           </form>
         </div>
         <IframeErrorBoundary>
