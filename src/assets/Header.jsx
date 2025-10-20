@@ -35,6 +35,18 @@ function Header() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 700) {
+        setIsOpen(false)
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+
   return (
     <>
       <nav id={navId}>
@@ -58,15 +70,15 @@ function Header() {
       </nav>
       <div id="mobile" ref={mobileRef}
         style={{
-          top: isOpen ? '70px' : '-100%'
+          top: isOpen ? '0px' : '-100%'
         }}
       >
         <ul>
-          <li><Link to={'/'}>Home</Link></li>
-          <li><Link to={'/about-us'}>About us</Link></li>
-          <li><Link to={'/team'}>Team</Link></li>
-          <li><Link to={'/tours'}>Tours</Link></li>
-          <li><Link to={'/blog'}>Blog</Link></li>
+          <Link to={'/'}><li>Home</li></Link>
+          <Link to={'/about-us'}><li>About us</li></Link>
+          <Link to={'/team'}><li>Team</li></Link>
+          <Link to={'/tours'}><li>Tours</li></Link>
+          <Link to={'/blog'}><li>Blog</li></Link>
         </ul>
       </div>
     </>

@@ -15,10 +15,10 @@ function Home() {
   }
   const images2 = [
     "https://dstal.com.au/wp-content/uploads/2021/09/logoipsum-768x360.png",
+    "https://kitpro.site/transvice/wp-content/uploads/sites/66/2022/01/logoipsum-logo-52-1.png",
     "https://kitpro.site/transvice/wp-content/uploads/sites/66/2022/01/logoipsum-logo-50-1.png",
     "https://i1.wp.com/tecuniversitario.net/wp-content/uploads/2020/07/logoipsum.png?ssl=1",
     "https://kitpro.site/transvice/wp-content/uploads/sites/66/2022/01/logoipsum-logo-52-1.png",
-    "https://wpblockslider.com/wp-content/uploads/2022/02/logoipsum-logo-10-1024x264.png",
   ]
 
   const duplicatedImages = [...images2, ...images2]

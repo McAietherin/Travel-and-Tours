@@ -5,35 +5,35 @@ export const blogs = [
         title: "Exploring the Himalayas: A Journey to Nepal's Peaks",
         image: "https://images.unsplash.com/photo-1607836046730-3317bd58a31b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         content: `
-      <h2>Introduction</h2>
-      <p>Nepal, home to the majestic Himalayas, offers adventurers a once-in-a-lifetime experience. From the bustling streets of Kathmandu to the serene trails of Everest Base Camp, this country is a treasure trove of natural beauty and cultural richness.</p>
+      <h2 class="jumper" >Introduction</h2>
+      <p class="jumper" >Nepal, home to the majestic Himalayas, offers adventurers a once-in-a-lifetime experience. From the bustling streets of Kathmandu to the serene trails of Everest Base Camp, this country is a treasure trove of natural beauty and cultural richness.</p>
       
-      <h2>Planning Your Trip</h2>
-      <p>When planning a trek or a sightseeing tour in Nepal, it’s essential to consider the season, route, and level of difficulty. The best time for trekking is during spring (March-May) or autumn (September-November), when the skies are clear, and the mountains shine in their full glory.</p>
+      <h2 class="jumper" >Planning Your Trip</h2>
+      <p class="jumper" >When planning a trek or a sightseeing tour in Nepal, it’s essential to consider the season, route, and level of difficulty. The best time for trekking is during spring (March-May) or autumn (September-November), when the skies are clear, and the mountains shine in their full glory.</p>
       
-      <h2>Must-Visit Destinations</h2>
-      <ul>
+      <h2 class="jumper" >Must-Visit Destinations</h2>
+      <ul class="jumper" >
         <li><strong>Kathmandu:</strong> Explore ancient temples, vibrant markets, and rich history.</li>
         <li><strong>Pokhara:</strong> Enjoy serene lakes, adventure sports, and breathtaking mountain views.</li>
         <li><strong>Everest Base Camp:</strong> Embark on a challenging trek with unparalleled scenery.</li>
         <li><strong>Chitwan National Park:</strong> Witness wildlife safaris, including rhinos and Bengal tigers.</li>
       </ul>
       
-      <h2>Local Culture</h2>
-      <p>Nepal is a melting pot of cultures, languages, and traditions. Participating in local festivals, tasting authentic Nepali cuisine, and interacting with locals will enrich your travel experience.</p>
+      <h2 class="jumper" >Local Culture</h2>
+      <p class="jumper" >Nepal is a melting pot of cultures, languages, and traditions. Participating in local festivals, tasting authentic Nepali cuisine, and interacting with locals will enrich your travel experience.</p>
       
-      <h2>Tips for Travelers</h2>
-      <ol>
+      <h2 class="jumper" >Tips for Travelers</h2>
+      <ol class="jumper" >
         <li>Pack appropriate clothing for changing weather conditions.</li>
         <li>Stay hydrated and respect altitude limits.</li>
         <li>Hire local guides to gain insights into hidden gems.</li>
         <li>Respect cultural and environmental practices.</li>
       </ol>
       
-      <p><img src="https://images.unsplash.com/photo-1601758173926-9dfc541f5d4e?q=80" alt="Nepal Himalayas" /></p>
+      <img src="https://images.unsplash.com/photo-1592450620607-efefef574bd0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632" alt="Nepal Himalayas"  class='bimg jumper' />
       
-      <h2>Conclusion</h2>
-      <p>Exploring Nepal is an adventure that feeds both the body and soul. With proper planning, a spirit of curiosity, and respect for local culture, travelers can experience the ultimate Himalayan journey.</p>
+      <h2 class="jumper" >Conclusion</h2>
+      <p class="jumper" >Exploring Nepal is an adventure that feeds both the body and soul. With proper planning, a spirit of curiosity, and respect for local culture, travelers can experience the ultimate Himalayan journey.</p>
     `
     },
     {
@@ -42,38 +42,38 @@ export const blogs = [
         title: "Discovering Nepal’s Hidden Treasures: Beyond the Tourist Trail",
         image: "https://images.unsplash.com/photo-1633538029540-6b27ca0dd65a?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         content: `
-      <h2>Introduction</h2>
-      <p>While popular destinations like Kathmandu and Pokhara draw many visitors, Nepal has countless hidden treasures waiting to be discovered. From remote villages to untouched landscapes, these off-the-beaten-path experiences are truly magical.</p>
+      <h2 class="jumper" >Introduction</h2>
+      <p class="jumper" >While popular destinations like Kathmandu and Pokhara draw many visitors, Nepal has countless hidden treasures waiting to be discovered. From remote villages to untouched landscapes, these off-the-beaten-path experiences are truly magical.</p>
       
-      <h2>Remote Villages</h2>
-      <p>Visiting villages like Ghandruk and Bandipur allows travelers to experience authentic Nepalese culture. Strolling through narrow lanes, observing traditional architecture, and interacting with locals provides deep cultural immersion.</p>
+      <h2 class="jumper" >Remote Villages</h2>
+      <p class="jumper" >Visiting villages like Ghandruk and Bandipur allows travelers to experience authentic Nepalese culture. Strolling through narrow lanes, observing traditional architecture, and interacting with locals provides deep cultural immersion.</p>
       
-      <h2>Nature and Wildlife</h2>
-      <p>Nepal offers an incredible variety of natural habitats, including lush forests, terraced hills, and glacial landscapes. Birdwatchers, hikers, and wildlife enthusiasts will find numerous hidden gems.</p>
+      <h2 class="jumper" >Nature and Wildlife</h2>
+      <p class="jumper" >Nepal offers an incredible variety of natural habitats, including lush forests, terraced hills, and glacial landscapes. Birdwatchers, hikers, and wildlife enthusiasts will find numerous hidden gems.</p>
       
-      <h2>Adventure Activities</h2>
-      <ul>
+      <h2 class="jumper" >Adventure Activities</h2>
+      <ul class="jumper" >
         <li>Trekking in Langtang Valley</li>
         <li>Kayaking on Trishuli River</li>
         <li>Mountain biking through remote trails</li>
         <li>Camping under starry Himalayan skies</li>
       </ul>
       
-      <h2>Cultural Experiences</h2>
-      <p>Participating in traditional festivals, learning local crafts, and enjoying homestays provides authentic experiences far from crowded tourist spots.</p>
+      <h2 class="jumper" >Cultural Experiences</h2>
+      <p class="jumper" >Participating in traditional festivals, learning local crafts, and enjoying homestays provides authentic experiences far from crowded tourist spots.</p>
       
-      <h2>Travel Tips</h2>
-      <ol>
+      <h2 class="jumper" >Travel Tips</h2>
+      <ol class="jumper" >
         <li>Always seek guidance from local guides.</li>
         <li>Carry sufficient cash for remote areas.</li>
         <li>Prepare for basic accommodation in some villages.</li>
         <li>Respect local customs and traditions.</li>
       </ol>
       
-      <p><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80" alt="Nepal Hidden Village" /></p>
+      <img src="https://images.unsplash.com/photo-1591161424284-6e2092d14b99?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470" alt="Nepal Hidden Village" class='bimg jumper' />
       
-      <h2>Conclusion</h2>
-      <p>Exploring Nepal beyond the well-known trails provides a unique perspective on the country’s heritage and natural beauty. Every traveler leaves with memories that cannot be found in guidebooks.</p>
+      <h2 class="jumper" >Conclusion</h2>
+      <p class="jumper" >Exploring Nepal beyond the well-known trails provides a unique perspective on the country’s heritage and natural beauty. Every traveler leaves with memories that cannot be found in guidebooks.</p>
     `
     },
     {
@@ -82,11 +82,11 @@ export const blogs = [
         title: "Ultimate Travel Guide: Nepal for Adventure Seekers",
         image: "https://images.unsplash.com/photo-1581931002726-25bdfa63ff8f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         content: `
-      <h2>Introduction</h2>
-      <p>Nepal is a dream destination for adventure seekers. From trekking and mountaineering to river rafting and paragliding, the country offers an endless array of thrilling activities set against stunning backdrops.</p>
+      <h2 class="jumper" >Introduction</h2>
+      <p class="jumper" >Nepal is a dream destination for adventure seekers. From trekking and mountaineering to river rafting and paragliding, the country offers an endless array of thrilling activities set against stunning backdrops.</p>
       
-      <h2>Top Adventure Activities</h2>
-      <ul>
+      <h2 class="jumper" >Top Adventure Activities</h2>
+      <ul class="jumper" >
         <li><strong>Trekking:</strong> Explore trails from Annapurna Circuit to Everest Base Camp.</li>
         <li><strong>Mountaineering:</strong> Climb peaks suitable for both beginners and experienced climbers.</li>
         <li><strong>White-water Rafting:</strong> Experience the adrenaline rush on rivers like Trishuli and Bhote Koshi.</li>
@@ -94,14 +94,14 @@ export const blogs = [
         <li><strong>Bungee Jumping:</strong> Take the plunge in picturesque locations near the Himalayas.</li>
       </ul>
       
-      <h2>Planning Your Adventure</h2>
-      <p>Adventure travel requires careful planning. Make sure to check seasonal conditions, prepare physically, and hire certified guides. Safety gear is essential for treks and extreme sports.</p>
+      <h2 class="jumper" >Planning Your Adventure</h2>
+      <p class="jumper" >Adventure travel requires careful planning. Make sure to check seasonal conditions, prepare physically, and hire certified guides. Safety gear is essential for treks and extreme sports.</p>
       
-      <h2>Local Culture and Cuisine</h2>
-      <p>While thrill-seekers may focus on adventure, immersing oneself in local culture enhances the experience. Enjoy traditional foods, visit temples, and attend festivals to balance adventure with cultural enrichment.</p>
+      <h2 class="jumper" >Local Culture and Cuisine</h2>
+      <p class="jumper" >While thrill-seekers may focus on adventure, immersing oneself in local culture enhances the experience. Enjoy traditional foods, visit temples, and attend festivals to balance adventure with cultural enrichment.</p>
       
-      <h2>Tips for a Memorable Trip</h2>
-      <ol>
+      <h2 class="jumper" >Tips for a Memorable Trip</h2>
+      <ol class="jumper" >
         <li>Start with shorter treks if you are a beginner.</li>
         <li>Always respect local customs.</li>
         <li>Carry sufficient water and high-energy snacks.</li>
@@ -109,10 +109,10 @@ export const blogs = [
         <li>Engage with local communities to learn hidden stories.</li>
       </ol>
       
-      <p><img src="https://images.unsplash.com/photo-1581602895413-c22d53b0b681?q=80" alt="Adventure in Nepal" /></p>
+      <img src="https://images.unsplash.com/photo-1618083707368-b3823daa2726?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470" alt="Adventure in Nepal"  class='bimg jumper' />
       
-      <h2>Conclusion</h2>
-      <p>Nepal is the perfect playground for adventurers of all levels. With breathtaking landscapes, rich culture, and a wealth of activities, every trip promises both challenge and wonder. By planning well and embracing local experiences, travelers can enjoy an unforgettable journey through the Himalayas and beyond.</p>
+      <h2 class="jumper" >Conclusion</h2>
+      <p class="jumper" >Nepal is the perfect playground for adventurers of all levels. With breathtaking landscapes, rich culture, and a wealth of activities, every trip promises both challenge and wonder. By planning well and embracing local experiences, travelers can enjoy an unforgettable journey through the Himalayas and beyond.</p>
     `
     }
 ];

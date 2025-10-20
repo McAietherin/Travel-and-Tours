@@ -9,10 +9,22 @@ function Blogpage() {
         return <h2>Blog not found</h2>
     }
     return (
-        <div style={{ padding: "2rem" }}>
-            <h1>Blog Post {id}</h1>
-            <p>This is the content for blog post with ID: {id}</p>
-        </div>
+        <section className='blohs'>
+            <div className="spacer"></div>
+            <div className='blohg'>
+                <h1 className='jumper'>{blog.title}</h1>
+                <p className='jumper'><em>{blog.date}</em></p>
+                <br />
+                {blog.image && (
+                    <img
+                        className='jumper'
+                        src={blog.image}
+                        alt={blog.title}
+                    />
+                )}
+                <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+            </div>
+        </section>
     )
 }
 
