@@ -67,7 +67,7 @@ function Home() {
         <div id="bannerover" className='jumper'>
           <h1>Discover majestic Nepal today</h1>
           <p>Explore the wonders of Nepal with Tournow - your gateway to unforgettable cultural and historical adventures in Nepal.</p>
-          <Link to={'/tours'}><div className="button" onClick={() => console.log('clicked')}>Explore Nepal now</div></Link>
+          <div className="button" onClick={scrollToBottom}>Explore Nepal Now</div>
         </div>
       </section>
       <div className="slider">
