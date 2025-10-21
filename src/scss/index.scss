@@ -41,34 +41,39 @@ body {
     }
 }
 
-.blohg{
+.blohg {
     @include spacer();
-    img{
+
+    img {
         width: 100%;
         height: fit-content;
         margin-bottom: 40px;
         filter: brightness(90%);
     }
-    li{
+
+    li {
         margin-left: 40px;
     }
-    h2{
+
+    h2 {
         margin-bottom: 10px;
     }
-    p{
+
+    p {
         margin-bottom: 20px;
         width: 90%;
     }
 }
 
-.bimg{
+.bimg {
     height: fit-content;
     margin: 60px auto;
 }
 
-.blohs{
+.blohs {
     margin-bottom: 100px;
-    .spacer{
+
+    .spacer {
         padding: 22px;
     }
 }
@@ -301,6 +306,22 @@ nav {
 
 footer {
     color: #ffffff;
+}
+
+#beige {
+    @include spacer();
+
+    a {
+        text-decoration: none;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 10px 30px;
+    }
+}
+
+#bidd{
+    width: 100vw;
+    overflow: hidden;
 }
 
 #restfooter {
@@ -807,7 +828,7 @@ iframe {
 }
 
 @media (max-width: 1250px) {
-    .blohg h1{
+    .blohg h1 {
         font-size: 60px;
     }
 
@@ -897,10 +918,11 @@ iframe {
 }
 
 @media(max-width: 900px) {
-    .blohg h1{
+    .blohg h1 {
         font-size: 45px;
         line-height: 60px;
     }
+
     #blog {
         grid-template-columns: 1fr;
     }
@@ -953,9 +975,10 @@ iframe {
         }
     }
 
-    #sear{
-        @include flex($ai:start, $fd:column, $gap:13px);
-        input{
+    #sear {
+        @include flex($ai: start, $fd: column, $gap: 13px);
+
+        input {
             width: 100%;
         }
     }
